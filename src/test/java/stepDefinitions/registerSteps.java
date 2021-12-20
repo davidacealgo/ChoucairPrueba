@@ -16,53 +16,53 @@ public class registerSteps{
 	    System.out.println("Step 2");
 	}
 
-	@Given("I enter email address in create account form")
+	@When("I enter email address in create account form")
 	public void i_enter_email_address_in_create_account_form() {
 	    System.out.println("Step 3");
 	}
 
-	@Given("I click Create an account button")
+	@When("I click Create an account button")
 	public void i_click_create_an_account_button() {
 	    System.out.println("Step 4");
 	}
 
-	@Given("I enter first name as {string}")
+	@When("I enter first name as {string}")
 	public void i_enter_first_name_as(String firstName) {
 	    System.out.println("Step 5" + firstName);
 	}
 
-	@Given("I enter last name as {string}")
+	@When("I enter last name as {string}")
 	public void i_enter_last_name_as(String lastName) {
 	    System.out.println("Step 6"+lastName);
 	}
 
-	@Given("I enter password as {string}")
+	@When("I enter password as {string}")
 	public void i_enter_password_as(String password) {
 	    System.out.println("Step 7"+password);
 	}
 
-	@Given("I enter address as {string}")
+	@When("I enter address as {string}")
 	public void i_enter_address_as(String address) {
 	    System.out.println("Step 8"+address);
 	}
 
-	@Given("I enter city as {string}")
+	@When("I enter city as {string}")
 	public void i_enter_city_as(String city) {
 	    System.out.println("Step 9"+city);
 	}
 
-	@Given("I select state")
+	@When("I select state")
 	public void i_select_state() {
 	    System.out.println("Step 10");
 	}
 
-	@Given("I enter Postal code as {string}")
+	@When("^I enter Postal code as ([0-9]{5})$")
 	public void i_enter_postal_code_as(String zip) {
 	    System.out.println("Step 11"+zip);
 	}
 
-	@Given("I enter mobile phone as {string}")
-	public void i_enter_mobile_phone_as(String mobilePhone) {
+	@When("I enter mobile phone as {int}")
+	public void i_enter_mobile_phone_as(int mobilePhone) {
 	    System.out.println("Step 12"+mobilePhone);
 	}
 
