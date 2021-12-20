@@ -15,7 +15,6 @@ public class RegistroUsuario {
 	
 	@Before
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		driver = new ChromeDriver(); 
 		driver.manage().window().maximize();
 		driver.get("http://automationpractice.com/index.php");
