@@ -14,7 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 				"json:target/MyReports/reports.json",
 				"junit:target/MyReports/reports.xml"
 				},
-		publish=true
+		monochrome=false,
+		dryRun=true
 )
 public class TestRunner {
 
