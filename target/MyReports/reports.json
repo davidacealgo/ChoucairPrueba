@@ -11,8 +11,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1009900,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".login\"}\n  (Session info: chrome\u003d96.0.4664.110)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SFI6D1I\u0027, ip: \u0027192.168.20.22\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\\Users\\daag1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9d1aa06dcf4698af3912f51172217477\n*** Element info: {Using\u003dclass name, value\u003dlogin}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\r\n\tat pages.homePage.isHomePage(homePage.java:25)\r\n\tat stepDefinitions.registerSteps.i_am_on_home_page(registerSteps.java:25)\r\n\tat ✽.I am on home page(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/registration.feature:7)\r\n",
+              "duration": 10038953000,
+              "status": "failed"
             },
             "line": 7,
             "name": "I am on home page",
@@ -24,11 +25,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-20T19:15:22.941Z",
+        "start_timestamp": "2021-12-20T22:19:05.392Z",
         "before": [
           {
             "result": {
-              "duration": 4745831800,
+              "duration": 5809314400,
               "status": "passed"
             },
             "match": {
@@ -43,7 +44,7 @@
         "after": [
           {
             "result": {
-              "duration": 623812500,
+              "duration": 611508600,
               "status": "passed"
             },
             "match": {
@@ -56,7 +57,7 @@
         "steps": [
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "I click Sign in button",
@@ -67,7 +68,8 @@
           },
           {
             "result": {
-              "status": "passed"
+              "duration": 999300,
+              "status": "skipped"
             },
             "line": 12,
             "name": "I enter email address in create account form",
@@ -78,7 +80,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "I click Create an account button",
@@ -89,8 +91,7 @@
           },
           {
             "result": {
-              "duration": 1002600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "I enter first name as \"Sara\"",
@@ -107,7 +108,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "I enter last name as \"Elizabeth\"",
@@ -124,8 +125,7 @@
           },
           {
             "result": {
-              "duration": 1001700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 16,
             "name": "I enter password as \"choucair123\"",
@@ -142,8 +142,7 @@
           },
           {
             "result": {
-              "duration": 997200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 17,
             "name": "I enter address as \"450 Serra Mall\"",
@@ -160,7 +159,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 18,
             "name": "I enter city as \"Stanford\"",
@@ -177,7 +176,8 @@
           },
           {
             "result": {
-              "status": "passed"
+              "duration": 999300,
+              "status": "skipped"
             },
             "line": 19,
             "name": "I select state",
@@ -188,7 +188,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "I enter Postal code as 94305",
@@ -205,7 +205,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "I enter mobile phone as 65072323",
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 22,
             "name": "I click the button Register",
@@ -233,7 +233,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 23,
             "name": "I am navigated to My account page",
@@ -244,8 +244,8 @@
           },
           {
             "result": {
-              "duration": 999400,
-              "status": "passed"
+              "duration": 1014000,
+              "status": "skipped"
             },
             "line": 24,
             "name": "I see my account information",
@@ -267,122 +267,6 @@
     "id": "register-user",
     "keyword": "Feature",
     "uri": "file:src/test/resources/AppFeatures/registration.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
-        "name": "User navigates to home page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 999800,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I am on home page",
-            "match": {
-              "location": "stepDefinitions.registerSteps.i_am_on_home_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-12-20T19:15:28.388Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4189172500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 7,
-        "name": "As guest user I can search products on the search bar",
-        "description": "",
-        "id": "search-product;as-guest-user-i-can-search-products-on-the-search-bar",
-        "after": [
-          {
-            "result": {
-              "duration": 630589100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.teardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I enter \"Printed Dress\" on search bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Printed Dress\"",
-                  "offset": 8
-                }
-              ],
-              "location": "stepDefinitions.searchSteps.i_enter_on_search_bar(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click search button",
-            "match": {
-              "location": "stepDefinitions.searchSteps.i_click_search_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1001100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the page returns the product \"Printed Dress\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Printed Dress\"",
-                  "offset": 29
-                }
-              ],
-              "location": "stepDefinitions.searchSteps.the_page_returns_the_product_searched(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
-        ]
-      }
-    ],
-    "name": "Search product",
-    "description": "",
-    "id": "search-product",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/AppFeatures/search.feature",
     "tags": []
   }
 ]

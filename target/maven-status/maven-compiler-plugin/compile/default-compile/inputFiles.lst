@@ -1,1 +1,9 @@
-C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\pages\register.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\enums\EnvironmentType.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\enums\DriverType.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\managers\FileReaderManager.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\dataProviders\ConfigFileReader.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\managers\WebDriverManager.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\cucumber\TestContext.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\pages\registerPage.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\pages\homePage.java
+C:\Users\daag1\eclipse-workspace\ChoucairPrueba\src\main\java\managers\PageObjectManager.java

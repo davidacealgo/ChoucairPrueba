@@ -3,22 +3,31 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.homePage;
+import pages.registerPage;
 
 public class registerSteps{
 	
+	
+	homePage homePage;
+	registerPage registerPage;
+	String userName = ""+(int)(Math.random()*Integer.MAX_VALUE);
+	
+
+	
 	@Given("I am on home page")
 	public void i_am_on_home_page() {
-	    System.out.println("Step 1");
+		homePage.isHomePage();
 	}
 
 	@Given("I click Sign in button")
 	public void i_click_sign_in_button() {
-	    System.out.println("Step 2");
+	    homePage.clickOnSignIn();
 	}
 
 	@When("I enter email address in create account form")
 	public void i_enter_email_address_in_create_account_form() {
-	    System.out.println("Step 3");
+	    registerPage.enterEmailAddress("prueba"+userName+"@mailinator.com");
 	}
 
 	@When("I click Create an account button")

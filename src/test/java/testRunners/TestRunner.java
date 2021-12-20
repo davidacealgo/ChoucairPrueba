@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:target/MyReports/reports.xml"
 				},
 		monochrome=false,
-		dryRun=true
+		dryRun=false
 )
 public class TestRunner {
 

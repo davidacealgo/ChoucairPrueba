@@ -1,15 +1,20 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class register {
+public class registerPage {
 
 	WebDriver driver;
 	
-	@FindBy(className = "login")
-	public WebElement loginButton;
+	public registerPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
 	
 	@FindBy(id = "email_create")
 	public WebElement emailAddress;
@@ -49,4 +54,13 @@ public class register {
 	
 	@FindBy(xpath = "//*[@id=\"center_column\"]/div/div[1]/ul/li[4]/a")
 	public WebElement personalInformation;
+	
+	public void enterEmailAddress(String address) {
+		emailAddress.sendKeys(address);
+	}
+	
+	public void clickOnCreateAccount() {
+		createAccountButton.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
 }

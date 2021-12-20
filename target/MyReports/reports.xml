@@ -1,28 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="10.429">
-    <testcase classname="Register user" name="As guest user I can create a new account" time="5.434">
-        <system-out><![CDATA[Given I am on home page.....................................................passed
-Given I click Sign in button................................................passed
-When I enter email address in create account form...........................passed
-And I click Create an account button........................................passed
-And I enter first name as "Sara"............................................passed
-And I enter last name as "Elizabeth"........................................passed
-And I enter password as "choucair123".......................................passed
-And I enter address as "450 Serra Mall".....................................passed
-And I enter city as "Stanford"..............................................passed
-And I select state..........................................................passed
-And I enter Postal code as 94305............................................passed
-And I enter mobile phone as 65072323........................................passed
-When I click the button Register............................................passed
-Then I am navigated to My account page......................................passed
-And I see my account information............................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Search product" name="As guest user I can search products on the search bar" time="4.824">
-        <system-out><![CDATA[Given I am on home page.....................................................passed
-Given I enter "Printed Dress" on search bar.................................passed
-When I click search button..................................................passed
-Then the page returns the product "Printed Dress"...........................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.703">
+    <testcase classname="Register user" name="As guest user I can create a new account" time="16.523">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.login&quot;}&#10;  (Session info: chrome=96.0.4664.110)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-SFI6D1I', ip: '192.168.20.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9d1aa06dcf4698af3912f51172217477&#10;*** Element info: {Using=class name, value=login}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given I am on home page.....................................................failed
+Given I click Sign in button................................................skipped
+When I enter email address in create account form...........................skipped
+And I click Create an account button........................................skipped
+And I enter first name as "Sara"............................................skipped
+And I enter last name as "Elizabeth"........................................skipped
+And I enter password as "choucair123".......................................skipped
+And I enter address as "450 Serra Mall".....................................skipped
+And I enter city as "Stanford"..............................................skipped
+And I select state..........................................................skipped
+And I enter Postal code as 94305............................................skipped
+And I enter mobile phone as 65072323........................................skipped
+When I click the button Register............................................skipped
+Then I am navigated to My account page......................................skipped
+And I see my account information............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".login"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SFI6D1I', ip: '192.168.20.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d1aa06dcf4698af3912f51172217477
+*** Element info: {Using=class name, value=login}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at pages.homePage.isHomePage(homePage.java:25)
+	at stepDefinitions.registerSteps.i_am_on_home_page(registerSteps.java:25)
+	at ✽.I am on home page(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/registration.feature:7)
+]]></failure>
     </testcase>
 </testsuite>
