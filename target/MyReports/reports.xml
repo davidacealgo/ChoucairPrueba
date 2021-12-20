@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="10.429">
+    <testcase classname="Register user" name="As guest user I can create a new account" time="5.434">
+        <system-out><![CDATA[Given I am on home page.....................................................passed
+Given I click Sign in button................................................passed
+When I enter email address in create account form...........................passed
+And I click Create an account button........................................passed
+And I enter first name as "Sara"............................................passed
+And I enter last name as "Elizabeth"........................................passed
+And I enter password as "choucair123".......................................passed
+And I enter address as "450 Serra Mall".....................................passed
+And I enter city as "Stanford"..............................................passed
+And I select state..........................................................passed
+And I enter Postal code as 94305............................................passed
+And I enter mobile phone as 65072323........................................passed
+When I click the button Register............................................passed
+Then I am navigated to My account page......................................passed
+And I see my account information............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search product" name="As guest user I can search products on the search bar" time="4.824">
+        <system-out><![CDATA[Given I am on home page.....................................................passed
+Given I enter "Printed Dress" on search bar.................................passed
+When I click search button..................................................passed
+Then the page returns the product "Printed Dress"...........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -10,7 +10,11 @@ import io.cucumber.junit.CucumberOptions;
 		features="src/test/resources/AppFeatures",
 		glue="stepDefinitions",
 		tags="@test",
-		plugin="pretty"
+		plugin={"pretty",
+				"json:target/MyReports/reports.json",
+				"junit:target/MyReports/reports.xml"
+				},
+		publish=true
 )
 public class TestRunner {
 
