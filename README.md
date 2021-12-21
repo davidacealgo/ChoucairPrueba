@@ -7,7 +7,7 @@
 5. The framework utilizes the Page Object Model pattern.
 6. Reports with extentreports in the folder test output
 7. How to run: 
-  Step1 Clone repository
-  Step2 in terminal go to folder
-  Step 3 run 'mvn test' command
-  Step 4 Reports are on "test output" folders in pdf and html
+  - Step1 Clone repository
+  - Step2 in terminal go to folder
+  - Step 3 run 'mvn test' command
+  - Step 4 Reports are on "test output" folders in pdf and html
