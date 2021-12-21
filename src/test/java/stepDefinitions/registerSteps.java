@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,16 +9,13 @@ import pages.registerPage;
 
 public class registerSteps{
 	
-	
-	homePage homePage;
-	registerPage registerPage;
+	private homePage homePage = new homePage(DriverFactory.getDriver());
+	private registerPage registerPage = new registerPage(DriverFactory.getDriver());
 	String userName = ""+(int)(Math.random()*Integer.MAX_VALUE);
-	
-
 	
 	@Given("I am on home page")
 	public void i_am_on_home_page() {
-		homePage.isHomePage();
+		DriverFactory.getDriver().get("http://automationpractice.com/index.php?");
 	}
 
 	@Given("I click Sign in button")

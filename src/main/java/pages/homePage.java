@@ -1,27 +1,18 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class homePage {
 
-	WebDriver driver;
-	
+	private WebDriver driver;
+	private By loginButton = By.className("login");
+
 	public homePage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
-	
-	@FindBy(className = "login")
-	public WebElement loginButton;
-	
-	public void isHomePage() {
-		loginButton.isDisplayed();
 	}
 	
 	public void clickOnSignIn() {
-		loginButton.click();
+		driver.findElement(loginButton).click();
 	}
 }

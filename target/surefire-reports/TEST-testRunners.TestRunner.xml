@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="testRunners.TestRunner" time="16.675" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="testRunners.TestRunner" time="6.788" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\daag1\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14587441534107355384.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\daag1\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf657045232172781140.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-15.0.1/bin/server;C:/Program Files/Java/jdk-15.0.1/bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.1\bin;C:\Users\daag1\AppData\Local\Microsoft\WindowsApps;C:\Users\daag1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\daag1\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.2\bin;;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\apache-maven-3.6.3\bin;;C:\WINDOWS\System32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,110 +56,5 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Register user" name="As guest user I can create a new account" time="16.675">
-    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.login&quot;}
-  (Session info: chrome=96.0.4664.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d1aa06dcf4698af3912f51172217477
-*** Element info: {Using=class name, value=login}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.login&quot;}
-  (Session info: chrome=96.0.4664.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d1aa06dcf4698af3912f51172217477
-*** Element info: {Using=class name, value=login}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at pages.homePage.isHomePage(homePage.java:25)
-	at stepDefinitions.registerSteps.i_am_on_home_page(registerSteps.java:25)
-	at ✽.I am on home page(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/registration.feature:7)
-</error>
-    <system-out>
-@test
-Scenario Outline: As guest user I can create a new account &amp;#27;[90m# src/test/resources/AppFeatures/registration.feature:27&amp;#27;[0m
-abrete sesamo
-  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI am on home page&amp;#27;[0m                                  &amp;#27;[90m# stepDefinitions.registerSteps.i_am_on_home_page()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.login&quot;}
-  (Session info: chrome=96.0.4664.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9d1aa06dcf4698af3912f51172217477
-*** Element info: {Using=class name, value=login}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
-	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at pages.homePage.isHomePage(homePage.java:25)
-	at stepDefinitions.registerSteps.i_am_on_home_page(registerSteps.java:25)
-	at âœ½.I am on home page(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/registration.feature:7)
-&amp;#27;[0m
-  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI click Sign in button&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.registerSteps.i_click_sign_in_button()&amp;#27;[0m
-  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI enter email address in create account form&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_email_address_in_create_account_form()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click Create an account button&amp;#27;[0m                     &amp;#27;[90m# stepDefinitions.registerSteps.i_click_create_an_account_button()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter first name as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Sara&quot;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_first_name_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter last name as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Elizabeth&quot;&amp;#27;[0m                     &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_last_name_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter password as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;choucair123&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_password_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter address as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;450 Serra Mall&quot;&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_address_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter city as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Stanford&quot;&amp;#27;[0m                           &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_city_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI select state&amp;#27;[0m                                       &amp;#27;[90m# stepDefinitions.registerSteps.i_select_state()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter Postal code as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m94305&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_postal_code_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI enter mobile phone as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m65072323&amp;#27;[0m                     &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_mobile_phone_as(int)&amp;#27;[0m
-  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI click the button Register&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_click_the_button_register()&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI am navigated to My account page&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.registerSteps.i_am_navigated_to_my_account_page()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI see my account information&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_see_my_account_information()&amp;#27;[0m
-cierrate sesamo
-</system-out>
-    <system-err>Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 32490
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-dic. 20, 2021 5:19:07 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 43054
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-dic. 20, 2021 5:19:08 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
-  </testcase>
+  <testcase classname="Register user" name="As guest user I can create a new account" time="6.788"/>
 </testsuite>

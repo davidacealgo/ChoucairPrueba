@@ -8,14 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/resources/AppFeatures",
-		glue="stepDefinitions",
+		glue={"stepDefinitions", "Hooks"},
 		tags="@test",
-		plugin={"pretty",
-				"json:target/MyReports/reports.json",
-				"junit:target/MyReports/reports.xml"
-				},
-		monochrome=false,
-		dryRun=false
+		plugin={"pretty"}
 )
 public class TestRunner {
 
