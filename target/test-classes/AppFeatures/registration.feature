@@ -18,10 +18,10 @@ Feature: Register user
  		And I enter city as "<city>"
  		And I select state
  		And I enter Postal code as 94305
- 		And I enter mobile phone as 65072323
+ 		And I enter mobile phone as "65072323"
  		When I click the button Register
- 		Then I am navigated to My account page
- 		And I see my account information
+ 		Then user gets title of the page
+ 		And page title is "My account - My Store"
 	Examples:
 		| firstName | lastName | password | address | city |
 		| Sara | Elizabeth | choucair123 | 450 Serra Mall | Stanford |

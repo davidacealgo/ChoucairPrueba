@@ -1,16 +1,21 @@
 package stepDefinitions;
 
+import org.junit.Assert;
+
 import factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.homePage;
+import pages.loginPage;
 import pages.registerPage;
 
 public class registerSteps{
 	
+	private String title;
 	private homePage homePage = new homePage(DriverFactory.getDriver());
 	private registerPage registerPage = new registerPage(DriverFactory.getDriver());
+	private loginPage loginPage = new loginPage(DriverFactory.getDriver());
 	String userName = ""+(int)(Math.random()*Integer.MAX_VALUE);
 	
 	@Given("I am on home page")
@@ -30,62 +35,63 @@ public class registerSteps{
 
 	@When("I click Create an account button")
 	public void i_click_create_an_account_button() {
-	    System.out.println("Step 4");
+	    registerPage.clickOnCreateAccount();
 	}
 
 	@When("I enter first name as {string}")
 	public void i_enter_first_name_as(String firstName) {
-	    System.out.println("Step 5" + firstName);
+		registerPage.enterFirstName(firstName);
 	}
 
 	@When("I enter last name as {string}")
 	public void i_enter_last_name_as(String lastName) {
-	    System.out.println("Step 6"+lastName);
+	    registerPage.enterLastName(lastName);
 	}
 
 	@When("I enter password as {string}")
 	public void i_enter_password_as(String password) {
-	    System.out.println("Step 7"+password);
+	    registerPage.enterPassword(password);
 	}
 
 	@When("I enter address as {string}")
 	public void i_enter_address_as(String address) {
-	    System.out.println("Step 8"+address);
+	    registerPage.enterAddress(address);
 	}
 
 	@When("I enter city as {string}")
 	public void i_enter_city_as(String city) {
-	    System.out.println("Step 9"+city);
+	    registerPage.enterCity(city);
 	}
 
 	@When("I select state")
 	public void i_select_state() {
-	    System.out.println("Step 10");
+	    registerPage.selectState();
 	}
 
 	@When("^I enter Postal code as ([0-9]{5})$")
 	public void i_enter_postal_code_as(String zip) {
-	    System.out.println("Step 11"+zip);
+	    registerPage.enterPostalCode(zip);
 	}
 
-	@When("I enter mobile phone as {int}")
-	public void i_enter_mobile_phone_as(int mobilePhone) {
-	    System.out.println("Step 12"+mobilePhone);
+	@When("I enter mobile phone as {string}")
+	public void i_enter_mobile_phone_as(String mobilePhone) {
+	    registerPage.enterMobilePhone(mobilePhone);
 	}
 
 	@When("I click the button Register")
 	public void i_click_the_button_register() {
-	    System.out.println("Step 13");
+	    registerPage.clickOnRegister();
 	}
 
-	@Then("I am navigated to My account page")
+	@Then("user gets title of the page")
 	public void i_am_navigated_to_my_account_page() {
-	    System.out.println("Step 14");
+		title = loginPage.getPageTitle();
 	}
 
-	@Then("I see my account information")
-	public void i_see_my_account_information() {
-	    System.out.println("Step 15");
+	@Then("page title is {string}")
+	public void page_title_should_be(String Title) {
+	    Assert.assertTrue(title.contains(Title));
 	}
+	
 	
 }
