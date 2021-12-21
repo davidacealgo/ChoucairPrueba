@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="1" name="testRunners.TestRunner" time="23.063" errors="1" skipped="0">
+<testsuite tests="1" failures="1" name="testRunners.TestRunner" time="6.809" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\daag1\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf18199417480962535431.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\daag1\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6319524609611714740.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-15.0.1/bin/server;C:/Program Files/Java/jdk-15.0.1/bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.1\bin;C:\Users\daag1\AppData\Local\Microsoft\WindowsApps;C:\Users\daag1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\daag1\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.2\bin;;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\apache-maven-3.6.3\bin;;C:\WINDOWS\System32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,104 +56,42 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Login page feature" name="Login page title" time="5.248"/>
-  <testcase classname="Login page feature" name="Login with correct credentials" time="6.735"/>
-  <testcase classname="Register user" name="As guest user I can create a new account" time="11.072">
+  <testcase classname="Search product" name="As guest user I can search products on the search bar" time="6.809">
     <failure type="java.lang.AssertionError">java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinitions.registerSteps.page_title_should_be(registerSteps.java:93)
-	at ✽.page title is &quot;My account - My Storesss&quot;(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/registration.feature:24)
+	at stepDefinitions.searchSteps.the_page_returns_the_product_searched(searchSteps.java:28)
+	at ✽.the page returns the product &quot;Blouses&quot;(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/search.feature:10)
 </failure>
     <system-out>
 @test
-Scenario Outline: As guest user I can create a new account &amp;#27;[90m# src/test/resources/AppFeatures/registration.feature:27&amp;#27;[0m
+Scenario Outline: As guest user I can search products on the search bar &amp;#27;[90m# src/test/resources/AppFeatures/search.feature:7&amp;#27;[0m
 browser value is: chrome
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on home page&amp;#27;[0m                                  &amp;#27;[90m# stepDefinitions.registerSteps.i_am_on_home_page()&amp;#27;[0m
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI click Sign in button&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.registerSteps.i_click_sign_in_button()&amp;#27;[0m
-  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI enter email address in create account form&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_email_address_in_create_account_form()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI click Create an account button&amp;#27;[0m                     &amp;#27;[90m# stepDefinitions.registerSteps.i_click_create_an_account_button()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter first name as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Sara&quot;&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_first_name_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter last name as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Elizabeth&quot;&amp;#27;[0m                     &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_last_name_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter password as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;choucair123&quot;&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_password_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter address as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;450 Serra Mall&quot;&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_address_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter city as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Stanford&quot;&amp;#27;[0m                           &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_city_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI select state&amp;#27;[0m                                       &amp;#27;[90m# stepDefinitions.registerSteps.i_select_state()&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter Postal code as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m94305&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_postal_code_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI enter mobile phone as &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;65072323&quot;&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.registerSteps.i_enter_mobile_phone_as(java.lang.String)&amp;#27;[0m
-  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI click the button Register&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_click_the_button_register()&amp;#27;[0m
-  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser gets title of the page&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.registerSteps.i_am_navigated_to_my_account_page()&amp;#27;[0m
-  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mpage title is &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;My account - My Storesss&quot;&amp;#27;[0m             &amp;#27;[90m# stepDefinitions.registerSteps.page_title_should_be(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on home page&amp;#27;[0m                                               &amp;#27;[90m# stepDefinitions.registerSteps.i_am_on_home_page()&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI enter &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Blouse&quot;&amp;#27;[0m&amp;#27;[32m on search bar&amp;#27;[0m                                  &amp;#27;[90m# stepDefinitions.searchSteps.i_enter_on_search_bar(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI click search button&amp;#27;[0m                                            &amp;#27;[90m# stepDefinitions.searchSteps.i_click_search_button()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mthe page returns the product &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Blouses&quot;&amp;#27;[0m                           &amp;#27;[90m# stepDefinitions.searchSteps.the_page_returns_the_product_searched(java.lang.String)&amp;#27;[0m
       &amp;#27;[31mjava.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinitions.registerSteps.page_title_should_be(registerSteps.java:93)
-	at âœ½.page title is &quot;My account - My Storesss&quot;(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/registration.feature:24)
+	at stepDefinitions.searchSteps.the_page_returns_the_product_searched(searchSteps.java:28)
+	at âœ½.the page returns the product &quot;Blouses&quot;(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/search.feature:10)
 &amp;#27;[0m
 
-    Embedding As_guest_user_I_can_create_a_new_account [image/png 118710 bytes]
+    Embedding As_guest_user_I_can_search_products_on_the_search_bar [image/png 187327 bytes]
 
 </system-out>
-    <system-err>Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 5933
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 7064
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-dic. 20, 2021 9:29:20 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+dic. 20, 2021 10:00:42 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
-  </testcase>
-  <testcase classname="Search product" name="As guest user I can search products on the search bar" time="0.008">
-    <error message="class io.cucumber.messages.Messages$GherkinDocument$Feature cannot be cast to class io.cucumber.messages.Messages$GherkinDocument$Feature$Scenario$Examples (io.cucumber.messages.Messages$GherkinDocument$Feature and io.cucumber.messages.Messages$GherkinDocument$Feature$Scenario$Examples are in unnamed module of loader &apos;app&apos;)" type="java.lang.ClassCastException">java.lang.ClassCastException: class io.cucumber.messages.Messages$GherkinDocument$Feature cannot be cast to class io.cucumber.messages.Messages$GherkinDocument$Feature$Scenario$Examples (io.cucumber.messages.Messages$GherkinDocument$Feature and io.cucumber.messages.Messages$GherkinDocument$Feature$Scenario$Examples are in unnamed module of loader &apos;app&apos;)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleScenarioOutline(ExtentCucumberAdapter.java:349)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestCaseStarted(ExtentCucumberAdapter.java:161)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$100(ExtentCucumberAdapter.java:62)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:106)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$3.receive(ExtentCucumberAdapter.java:103)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:66)
-	at io.cucumber.core.runner.TestCase.emitTestCaseStarted(TestCase.java:228)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>
-@test
-Scenario Outline: As guest user I can search products on the search bar &amp;#27;[90m# src/test/resources/AppFeatures/search.feature:7&amp;#27;[0m
-</system-out>
   </testcase>
 </testsuite>
