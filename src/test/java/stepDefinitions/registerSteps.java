@@ -93,5 +93,15 @@ public class registerSteps{
 	    Assert.assertTrue(title.contains(Title));
 	}
 	
+	@When("I enter email address {string}")
+	public void i_enter_email_address(String address) {
+	    registerPage.enterEmailAddress(address);
+	}
+
+	@Then("An error is displayed")
+	public void an_error_is_displayed() {
+	    registerPage.errorEmailExists();
+	}
+	
 	
 }

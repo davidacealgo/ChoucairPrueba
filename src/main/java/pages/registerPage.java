@@ -20,6 +20,7 @@ public class registerPage {
 	private By zipCode = By.id("postcode");
 	private By mobilePhone = By.id("phone_mobile");
 	private By registerButton = By.id("submitAccount");
+	private By errorEmail = By.id("create_account_error");
 	
 	public registerPage(WebDriver driver) {
 		this.driver = driver;
@@ -27,6 +28,10 @@ public class registerPage {
 	
 	public void enterEmailAddress(String address) {
 		driver.findElement(emailAddress).sendKeys(address);
+	}
+	
+	public void errorEmailExists() {
+		System.out.println(driver.findElement(errorEmail).getText());
 	}
 	
 	public void clickOnCreateAccount() {

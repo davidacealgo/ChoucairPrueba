@@ -25,3 +25,9 @@ Feature: Register user
 	Examples:
 		| firstName | lastName | password | address | city |
 		| Sara | Elizabeth | choucair123 | 450 Serra Mall | Stanford |
+		
+	Scenario: As guest user I can not create a new account with an existing email
+		Given I click Sign in button
+		When I enter email address "prueba1@mailinator.com"
+		And I click Create an account button
+		Then An error is displayed 
