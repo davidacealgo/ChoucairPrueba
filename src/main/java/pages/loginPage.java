@@ -10,6 +10,7 @@ public class loginPage {
 	private By emailId = By.id("email");
 	private By passwd = By.id("passwd");
 	private By signInButton = By.id("SubmitLogin");
+	private By womenCategory = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[1]/a");
 	
 	public loginPage(WebDriver driver) {
 		this.driver = driver;
@@ -30,4 +31,10 @@ public class loginPage {
 	public void clickOnLogin() {
 		driver.findElement(signInButton).click();
 	}
+	
+	public void clickOnWomenCategory() {
+		driver.findElement(womenCategory).click();
+	}
+	
+	
 }
