@@ -25,7 +25,9 @@ public class storePage {
 		WebDriverWait ewait = new WebDriverWait(driver, 10);
 		ewait.until(ExpectedConditions.elementToBeClickable(product));
 		((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", product);
-		product.click();
+		Actions action = new Actions(driver);
+		action.moveToElement(product);
+		action.perform();
 	}
 	
 	public void clicAddToCartButton() {
