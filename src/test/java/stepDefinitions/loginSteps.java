@@ -25,6 +25,7 @@ public class loginSteps {
 
 	@Then("page title should be {string}")
 	public void page_title_should_be(String Title) {
+		loginPage.waitTitle(title);
 	    Assert.assertTrue(title.contains(Title));
 	}
 

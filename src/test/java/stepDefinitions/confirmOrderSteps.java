@@ -20,7 +20,7 @@ public class confirmOrderSteps {
 	}
 
 	@Given("user hover on the product")
-	public void user_hover_on_the_product(String string) {
+	public void user_hover_on_the_product() {
 	    storePage.hoverProduct();
 	}
 
@@ -34,9 +34,9 @@ public class confirmOrderSteps {
 	    storePage.clickProceedToCheckOutButton();
 	}
 
-	@When("current step should be the first")
-	public void current_step_should_be_the_first() {
-		orderPage.firstStep();
+	@When("current step is the first should be {string}")
+	public void current_step_is_the_first_should_be(String step) {
+		orderPage.firstStep(step);
 	}
 
 	@When("user clicks on Proceed to checkout button in Summary step")
@@ -44,56 +44,48 @@ public class confirmOrderSteps {
 		orderPage.proceedStandartCheckOutButton();
 	}
 
-	@When("current step should be the third")
-	public void current_step_should_be_the_third() {
-		orderPage.thirdStep();
+	@When("current step is the third should be {string}")
+	public void current_step_is_the_third_should_be(String step) {
+		orderPage.thirdStep(step);
 	}
 
 	@When("user clicks on Proceed to checkout button in Address step")
 	public void user_clicks_on_proceed_to_checkout_button_in_address_step() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    orderPage.clickOnProcessAddress();
 	}
 
-	@When("current step should be the fourth")
-	public void current_step_should_be_the_fourth() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@When("current step is the fourth should be {string}")
+	public void current_step_should_be_the_fourth(String step) {
+	   orderPage.fourthStep(step);
 	}
 
 	@When("user clicks on checkbox to agree terms of services")
 	public void user_clicks_on_checkbox_to_agree_terms_of_services() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    orderPage.agreeTerms();
 	}
 
 	@When("user clicks on Proceed to checkout button in Shipping")
 	public void user_clicks_on_proceed_to_checkout_button_in_shipping() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    orderPage.clickOnProcessShipping();
 	}
 
-	@When("current step should be the last")
-	public void current_step_should_be_the_last() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@When("current step is the last should be {string}")
+	public void current_step_should_be_the_last(String step) {
+		orderPage.endStep(step);
 	}
 
 	@When("user clicks on Pay by bank wire button")
 	public void user_clicks_on_pay_by_bank_wire_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    orderPage.clickOnBankWire();
 	}
 
 	@When("user clicks on I confirm my order button")
 	public void user_clicks_on_i_confirm_my_order_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    orderPage.clickOnConfirmOrder();
 	}
 
-	@Then("the order is complete")
-	public void the_order_is_complete() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("the message order complete is {string}")
+	public void the_order_is_complete(String message) {
+	    orderPage.orderComplete(message);
 	}
 }

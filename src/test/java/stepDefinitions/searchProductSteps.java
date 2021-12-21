@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.homePage;
 
-public class searchSteps {
+public class searchProductSteps {
 
 	private homePage homePage = new homePage(DriverFactory.getDriver());
 	

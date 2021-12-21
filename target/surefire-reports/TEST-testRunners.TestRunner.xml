@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="testRunners.TestRunner" time="49.43" errors="2" skipped="0">
+<testsuite tests="5" failures="0" name="testRunners.TestRunner" time="48.209" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\daag1\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf17621036826136920867.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\daag1\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3770743589502541713.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-15.0.1/bin/server;C:/Program Files/Java/jdk-15.0.1/bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.1\bin;C:\Users\daag1\AppData\Local\Microsoft\WindowsApps;C:\Users\daag1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\daag1\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.2\bin;;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\apache-maven-3.6.3\bin;;C:\WINDOWS\System32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,126 +56,9 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Confirm order" name="Buy a product" time="24.714">
-    <error message="Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pages.loginPage.enterUserName(loginPage.java:24)
-	at stepDefinitions.loginSteps.user_enters_username(loginSteps.java:33)
-	at ✽.user enters username &quot;prueba1@mailinator.com&quot;(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/confirmOrder.feature:6)
-</error>
-    <system-out>
-@test
-Scenario: Buy a product                                         &amp;#27;[90m# src/test/resources/AppFeatures/confirmOrder.feature:15&amp;#27;[0m
-browser value is: chrome
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32muser is on login page&amp;#27;[0m                                   &amp;#27;[90m# stepDefinitions.loginSteps.user_is_on_login_page()&amp;#27;[0m
-  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31muser enters username &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;prueba1@mailinator.com&quot;&amp;#27;[0m            &amp;#27;[90m# stepDefinitions.loginSteps.user_enters_username(java.lang.String)&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Cannot locate an element using id=email
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at pages.loginPage.enterUserName(loginPage.java:24)
-	at stepDefinitions.loginSteps.user_enters_username(loginSteps.java:33)
-	at âœ½.user enters username &quot;prueba1@mailinator.com&quot;(file:///C:/Users/daag1/eclipse-workspace/ChoucairPrueba/src/test/resources/AppFeatures/confirmOrder.feature:6)
-&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser enters password &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;fresacoco15&quot;&amp;#27;[0m                        &amp;#27;[90m# stepDefinitions.loginSteps.user_enters_password(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Login button&amp;#27;[0m                               &amp;#27;[90m# stepDefinitions.loginSteps.user_clicks_on_login_button()&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36muser gets the title of the page&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.loginSteps.user_gets_the_title_of_the_page()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mpage title should be &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;My account - My Store&quot;&amp;#27;[0m              &amp;#27;[90m# stepDefinitions.loginSteps.page_title_should_be(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Women category&amp;#27;[0m                             &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_women_category()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mpage title should be &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Women - My Store&quot;&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.loginSteps.page_title_should_be(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36muser hover on the product&amp;#27;[0m                               &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_hover_on_the_product(java.lang.String)&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Add to cart button&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_add_to_cart_button()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks proceed to checkout button&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_proceed_to_checkout_button()&amp;#27;[0m
-  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mcurrent step should be the first&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.confirmOrderSteps.current_step_should_be_the_first()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Proceed to checkout button in Summary step&amp;#27;[0m &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_proceed_to_checkout_button_in_summary_step()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mcurrent step should be the third&amp;#27;[0m                          &amp;#27;[90m# stepDefinitions.confirmOrderSteps.current_step_should_be_the_third()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Proceed to checkout button in Address step&amp;#27;[0m &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_proceed_to_checkout_button_in_address_step()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mcurrent step should be the fourth&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.confirmOrderSteps.current_step_should_be_the_fourth()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on checkbox to agree terms of services&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_checkbox_to_agree_terms_of_services()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Proceed to checkout button in Shipping&amp;#27;[0m     &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_proceed_to_checkout_button_in_shipping()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mcurrent step should be the last&amp;#27;[0m                           &amp;#27;[90m# stepDefinitions.confirmOrderSteps.current_step_should_be_the_last()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on Pay by bank wire button&amp;#27;[0m                    &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_pay_by_bank_wire_button()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser clicks on I confirm my order button&amp;#27;[0m                  &amp;#27;[90m# stepDefinitions.confirmOrderSteps.user_clicks_on_i_confirm_my_order_button()&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mthe order is complete&amp;#27;[0m                                    &amp;#27;[90m# stepDefinitions.confirmOrderSteps.the_order_is_complete()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d38e9535b659d9215181e899507cf5a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Hooks.Hooks.tearDown(Hooks.java:46)
-&amp;#27;[0m
-</system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 96.0.4664.45 (76e4c1bb2ab4671b8beba3444e61c0f17584b2fc-refs/branch-heads/4664@{#947}) on port 5987
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-dic. 21, 2021 12:15:41 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-[1640063755.030][WARNING]: Timed out connecting to Chrome, retrying...
-</system-err>
-  </testcase>
-  <testcase classname="Confirm order" name="Buy a product" time="24.716">
-    <error message="chrome not reachable
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d38e9535b659d9215181e899507cf5a" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=96.0.4664.110)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-SFI6D1I&apos;, ip: &apos;192.168.20.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\daag1\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d38e9535b659d9215181e899507cf5a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at Hooks.Hooks.tearDown(Hooks.java:46)
-</error>
-  </testcase>
+  <testcase classname="Confirm order" name="Buy a product" time="20.411"/>
+  <testcase classname="Login page feature" name="Login page title" time="4.538"/>
+  <testcase classname="Login page feature" name="Login with correct credentials" time="6.598"/>
+  <testcase classname="Register user" name="As guest user I can create a new account" time="10.991"/>
+  <testcase classname="Search product" name="As guest user I can search products on the search bar" time="5.671"/>
 </testsuite>

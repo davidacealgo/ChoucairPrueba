@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class loginPage {
 
@@ -36,5 +38,9 @@ public class loginPage {
 		driver.findElement(womenCategory).click();
 	}
 	
+	public void waitTitle(String title) {
+		WebDriverWait ewait = new WebDriverWait(driver, 10);
+		ewait.until(ExpectedConditions.titleContains(title));
+	}
 	
 }
