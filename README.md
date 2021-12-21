@@ -6,4 +6,8 @@
 4. Tests are written in Gherkin and are stored in feature files.
 5. The framework utilizes the Page Object Model pattern.
 6. Reports with extentreports in the folder test output
-7. How to run: Clone repository, in terminal go to folder and run 'mvn install' and 'mvn test' commands, reports are on "test output" folders in pdf and html
+7. How to run: 
+  Step1 Clone repository
+  Step2 in terminal go to folder
+  Step 3 run 'mvn install' and 'mvn test' commands
+  Step 4 Reports are on "test output" folders in pdf and html
