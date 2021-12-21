@@ -1,10 +1,12 @@
 Feature: Login page feature
 
+@test
 Scenario: Login page title
 Given user is on login page
 When user gets the title of the page
 Then page title should be "Login - My Store"
 
+@test
 Scenario: Login with correct credentials
 Given user is on login page
 When user enters username "prueba1@mailinator.com"

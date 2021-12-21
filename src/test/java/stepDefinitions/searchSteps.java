@@ -8,7 +8,7 @@ public class searchSteps {
 
 	@Given("I enter {string} on search bar")
 	public void i_enter_on_search_bar(String product) {
-	    System.out.println("Step 1" + product);
+	    
 	}
 
 	@When("I click search button")

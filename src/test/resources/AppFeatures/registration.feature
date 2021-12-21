@@ -21,7 +21,7 @@ Feature: Register user
  		And I enter mobile phone as "65072323"
  		When I click the button Register
  		Then user gets title of the page
- 		And page title is "My account - My Store"
+ 		And page title is "My account - My Storesss"
 	Examples:
 		| firstName | lastName | password | address | city |
 		| Sara | Elizabeth | choucair123 | 450 Serra Mall | Stanford |
