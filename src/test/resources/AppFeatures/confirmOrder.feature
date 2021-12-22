@@ -1,5 +1,7 @@
 @test
-Feature: Confirm order
+Feature: As user logged in
+				 I want to buy a product
+				 So that I can confirm my order
 
 Background: User login 
 	Given user is on login page

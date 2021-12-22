@@ -1,5 +1,7 @@
 @test	
-Feature: Search product
+Feature: As user
+				 I want to search a product
+				 So that I can see the details of the product
 
 	Background: User navigates to home page
 		Given I am on home page

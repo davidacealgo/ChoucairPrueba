@@ -1,4 +1,6 @@
-Feature: Login page feature
+Feature: As guest user
+				 I want to login 
+				 So that the system can authenticate me
 
 @test
 Scenario: Login page title

@@ -1,7 +1,6 @@
-Feature: Register user
-	In order to create a new account
-	As guest user
-	I want to fill the form registration
+Feature: As guest user
+				 I want to fill the form registration
+				 So that I can create a new account
 
 	Background: User navigates to home page
 		Given I am on home page
